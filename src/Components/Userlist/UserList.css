@@ -1,0 +1,95 @@
+.user-list-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+ 
+}
+
+.user-list-container h1 {
+ 
+margin-bottom: -30px;
+}
+
+table {
+  width: 100%;
+
+  margin-top: 20px;
+  border-radius: 8px; 
+  overflow: hidden; 
+ 
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+table img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 2px;
+  padding: 5px 5px;
+  border: none;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+}
+.filters{
+  margin-left: 65%;
+  font-size: 14px;
+  padding: 10px;
+  display: flex;
+}
+
+
+@media (max-width: 768px) {
+  .user-list-container {
+    padding: 10px;
+  }
+
+  table th, table td {
+    padding: 6px;
+  }
+
+  table img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .pagination button {
+    padding: 8px 12px;
+  }
+}
